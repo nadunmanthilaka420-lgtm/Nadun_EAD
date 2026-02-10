@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StudentResults" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7f63567d-9486-4444-8393-705307c8d926">
+    <queryString>
+        <![CDATA[SELECT * FROM results]]>
+    </queryString>
+    <field name="name" class="java.lang.String"/>
+    <field name="course" class="java.lang.String"/>
+    <field name="final_marks" class="java.lang.Double"/>
+    <field name="final_grade" class="java.lang.String"/>
+    
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="79" uuid="8a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b7a"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="24" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Student Results Report]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="35" splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="30" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="138" height="30" uuid="0a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b7b"/>
+                <box>
+                    <pen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="138" y="0" width="138" height="30" uuid="1a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b7c"/>
+                <box>
+                    <pen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Course]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="276" y="0" width="138" height="30" uuid="2a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b7d"/>
+                <box>
+                    <pen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Final Marks]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="414" y="0" width="141" height="30" uuid="3a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b7e"/>
+                <box>
+                    <pen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Grade]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="30" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="138" height="30" uuid="4a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b7f"/>
+                <box>
+                    <pen lineWidth="0.5" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="138" y="0" width="138" height="30" uuid="5a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b8a"/>
+                <box>
+                    <pen lineWidth="0.5" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{course}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="276" y="0" width="138" height="30" uuid="6a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b8b"/>
+                <box>
+                    <pen lineWidth="0.5" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{final_marks}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="414" y="0" width="141" height="30" uuid="7a6d9b0e-3b5e-4c7a-8d7b-4b1d3d6b6b8c"/>
+                <box>
+                    <pen lineWidth="0.5" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{final_grade}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>
