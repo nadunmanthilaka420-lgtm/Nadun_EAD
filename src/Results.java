@@ -169,6 +169,11 @@ public class Results extends javax.swing.JFrame {
         jLabel1.setText("Student Results");
 
         jButton3.setText("Back");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -266,6 +271,12 @@ public class Results extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Database Error:"+ex.getMessage());
         }
     }//GEN-LAST:event_btnCalActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+         LecturerMenu lm=new LecturerMenu();
+        lm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

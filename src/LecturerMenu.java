@@ -60,6 +60,11 @@ public class LecturerMenu extends javax.swing.JFrame {
         btnReport.setBackground(new java.awt.Color(0, 102, 255));
         btnReport.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnReport.setText("Report");
+        btnReport.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReportActionPerformed(evt);
+            }
+        });
 
         jButton4.setBackground(new java.awt.Color(0, 255, 204));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -132,6 +137,12 @@ public class LecturerMenu extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
+        ReportManager rm=new ReportManager();
+        rm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnReportActionPerformed
+
     private void btnAttendanceActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnAttendanceActionPerformed
         Attendance at = new Attendance();
         at.setVisible(true);
@@ -154,10 +165,7 @@ public class LecturerMenu extends javax.swing.JFrame {
         this.dispose();
     }// GEN-LAST:event_jButton5ActionPerformed
 
-    private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {
-        ReportManager rm = new ReportManager();
-        rm.setVisible(true);
-    }
+    
 
     /**
      * @param args the command line arguments
