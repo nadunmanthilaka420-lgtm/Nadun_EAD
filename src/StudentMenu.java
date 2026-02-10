@@ -23,7 +23,7 @@ public class StudentMenu extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jButton4 = new javax.swing.JButton();
@@ -35,7 +35,6 @@ public class StudentMenu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1089, 575));
         getContentPane().setLayout(null);
 
         jButton4.setBackground(new java.awt.Color(0, 255, 204));
@@ -78,9 +77,9 @@ public class StudentMenu extends javax.swing.JFrame {
         jButton7.setBounds(1010, 520, 100, 40);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel2.setText("WEL COME");
+        jLabel2.setText("WELCOME");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(480, 40, 200, 48);
+        jLabel2.setBounds(430, 40, 200, 48);
 
         jButton1.setBackground(new java.awt.Color(0, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -88,8 +87,7 @@ public class StudentMenu extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(410, 320, 330, 47);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(
-                "C:\\Users\\MSI\\Documents\\NetBeansProjects\\JavaApplication2\\src\\WhatsApp Image 2026-02-09 at 22.27.47.jpeg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\MSI\\Documents\\NetBeansProjects\\JavaApplication2\\src\\WhatsApp Image 2026-02-09 at 22.27.47.jpeg")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(-120, 0, 1240, 580);
